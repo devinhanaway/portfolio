@@ -1,0 +1,108 @@
+.landingImg{
+  height: 100%;
+  width: 100%
+}
+.landing-title{
+  position:sticky;
+  margin-top: 50vh;
+}
+
+.arrow{
+  position: absolute;
+  margin-top: 80vh;
+}
+
+.landing{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("/landing.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.center{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.aboutDiv{
+  background: #1C1E22;
+
+}
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.projectsheader{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-between;
+  /*background: #1C1E22;*/
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+button{
+  background-color: black;
+  border: none;
+}
+
+.projectDisplay{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: #1C1E22;
+  flex-wrap: wrap;
+  padding-bottom: 4em;
+
+}
+
+span.text-content {
+  /*background: rgba(0,0,0,0.5);*/
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 150px;
+  position: absolute;
+  top: 20%;
+  width: auto;
+  opacity: 0;
+}
+
+
+span.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+.imageBox{
+  display: inline-block;
+height: 150px;
+margin: 6em 1em 6em 1em;
+position: relative;
+text-align: center;
+/*background-color: rgba(1,0,0,0.5)*/
+}
+
+
+
+div.imageBox:hover span.text-content {
+  opacity: 1;
+  /*background-color:rgba(1,0,0,0.5);*/
+}
+img.imgProject{
+  opacity: 1;
+}
+
+div.imageBox:hover img.imgProject {
+  opacity: 0;
+}
