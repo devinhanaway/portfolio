@@ -4,33 +4,38 @@ import './App.css';
 import Landing from './components/Landing'
 import About from './components/About'
 import Projects from './components/Projects'
+import Timeline from './components/Timeline'
 
-const myTitle =['Product Manager','Software Developer','Entrepreneur', 'Adventurer']
 
 class App extends Component {
-  constructor(){
-    super()
-    this.state = {
-      title: "Product Manager"
-    }
-  }
 
   render() {
-
-    setTimeout(()=>{
-      const i = Math.floor(Math.random() * 4)
-      this.setState({title: myTitle[i]})
-    }, 4000)
-
     return (
       <div className="App">
-
-        <Landing title={this.state.title}/>
-        {/* <Header /> */}
+        <div className="personalIcons">
+          <div className="icon">
+            <a href="./resume_devin_hanaway.pdf"
+             target="_blank"><img src="./resume.png"/></a>
+          </div>
+          <div className="icon">
+            <a href="mailto:devinh11@gmail.com"><img src="./email.png"/></a>
+          </div>
+          <div className="icon">
+            <a href="https://github.com/devinhanaway/"><img src="./git.png"/></a>
+          </div>
+          <div className="icon">
+            <a href="https://www.linkedin.com/in/devinhanaway/"><img src="./linkedin.png"/></a>
+          </div>
+        </div>
+        <Landing />
         <About />
+        <Timeline />
         <Projects />
-
-
+      <div className="nav-bar"></div>
+        <div class="navbar-header">
+          <span>Devin Hanaway   | All License Reserved</span>
+        <span></span>
+        </div>
       </div>
     );
   }
