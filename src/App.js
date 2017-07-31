@@ -15,7 +15,9 @@ class App extends Component {
         <div className="personalIcons">
           <div className="icon">
             <a href="./resume_devin_hanaway.pdf"
-             target="_blank"><img src="./resume.png"/></a>
+             target="_blank"
+            // download="./resume_devin_hanaway.pdf"
+             ><img src="./resume.png"/></a>
           </div>
           <div className="icon">
             <a href="mailto:devinh11@gmail.com"><img src="./email.png"/></a>
