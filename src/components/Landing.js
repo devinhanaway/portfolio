@@ -21,7 +21,7 @@ export default class Landing extends Component{
     return(
       <div className="landing">
         <h1 className="landing-title">{this.state.title}</h1>
-      <img className="img-responsive landing-title arrow" src={"./arrow.png"} alt="Hello"/>
+      {/* <img className="img-responsive landing-title arrow" src={"./arrow.png"} alt="Hello"/> */}
 
 
       </div>
