@@ -10,7 +10,7 @@ export default class Header extends Component{
     return(
       <div>
         <div className="page-header">
-          <h1>Devin Hanaway <soft>Product Manager | Software Developer | Entrepreneur</soft></h1>
+          <h1>Devin Hanaway <soft>Product Manager | Software Developer |Experience Designer | Entrepreneur</soft></h1>
         </div>
 
           <div className="row">
