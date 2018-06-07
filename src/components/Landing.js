@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css';
 
-const myTitle =['Product Manager', 'Experience Designer', 'Software Developer','Entrepreneur', 'Nomad']
+const myTitle =['Product Manager', 'Chef', 'Full Stack Developer','Entrepreneur', 'Nomad']
 
 
 export default class Landing extends Component{

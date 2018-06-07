@@ -4,6 +4,19 @@ import {
   Link
 } from 'react-router-dom'
 
+const currentProjects =[
+  {image:"./gcc_logo.jpg",
+    name:"The Greeting Card Club",
+    description: "Shouldn't sending cards be easy? We realized that we kept forgetting the birthdays of our moms, grandparents, and loved ones. Sure Facebook told us about the 100s of birthdays of people that we're connected with online, but ironically, it became hard to remember the birthdays of people we actually cared about.",
+    url: "https://www.thegreetingcardclub.com/about",
+    types: ['product', 'entrepreneur']
+  },
+  {image:"./matter_logo_white.png",
+    name:"Matter",
+    description: "We believe that success comes from having the right playbook, so we never build blindly or design overloaded products. We measure success by results, not features - You share your vision; we'll make it Matter.?",
+    url: "http://matterproductstudio.com/",
+    types: ['product', 'entrepreneur']
+  },]
 
 const projects =[
   {image:"./Inverge_circle.png",
@@ -26,20 +39,7 @@ const projects =[
     url: "http://carolinathink.com/",
     types: ['entrepreneur']
   },
-  {image:"./Jooster.png",
-    name:"Jooster",
-    description: "A world of nutrition in a tiny pod | We are in stealth mode, building a company that will revolutionize how people get and monitor their nutrition.",
-    url: "http://www.jooster.com/",
-    types: ['entrepreneur']
-  },
-  {image:"./HATCH.png",
-    name:"iHatch",
-    description: "A way for you to keep track of your various idea, and hash out some of the details for hatching your idea, and making it a real product or service. ~ inspired by the physcial notebook kickstart, Hatch",
-    github:"https://github.com/weHatch/iHatch",
-    url: "http://ihatchprojects.herokuapp.com/",
-    types: ['software']
-  },
-  {image:"./microLens.png",
+  {image:"./mycro_lens.png",
     name:"MycroLens",
     description: "MicroLens is consumer facing food tracker, that allows you to track the food you eat based upon Micro/Macro nutrients compared to your Daily Recommended Intake. Using MicroLens you can easily identify gaps in your nutrition and get whole nutrient comparison to improve your diet.",
     github:"https://github.com/MicroNutra",
@@ -87,14 +87,33 @@ function filterProj(projects){
   })
 }
 
+function filterProj(currentProjects){
 
+  return currentProjects.filter(proj => {
+    if(filt == null){
+      return proj
+    }
+    return proj.types.contains(filt)
+  return proj
+  }).map(proj=>{
+    return (<div className="imageBox">
+        <img className="img-responsive imgProject" src={proj.image} alt="Hello"/>
+        <span className="text-content">
+          <span className="text-primary">{proj.name}<br></br>{proj.description}
+          </span><br></br>
+        <span><a href={proj.github}><img src={"./github2.png"}/></a><a href={proj.url}><img src={"./domain2.png"}/></a></span>
+        </span>
+      </div>)
+  })
+}
 export default class Projects extends Component{
   constructor(){
     super()
     this.state = {
       currentType: null,
       // filterProj: filterProj(projects),
-      projects
+      projects,
+      currentProjects
     }
   }
 
@@ -103,6 +122,12 @@ export default class Projects extends Component{
     return(
 
       <div>
+        <div className="container ">
+          <h1 className="header">Current Work</h1>
+        </div>
+        <div className="container projectDisplay">
+          {filterProj(this.state.currentProjects)}
+        </div>
         <div className="container ">
           <h1 className="header">My Projects</h1>
         </div>
@@ -115,6 +140,7 @@ export default class Projects extends Component{
         <div className="container projectDisplay">
           {filterProj(this.state.projects)}
         </div>
+
 
 
       </div>

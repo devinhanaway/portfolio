@@ -32,7 +32,6 @@
   background-image: url("/landing.png");
   background-repeat: no-repeat;
   background-size:cover;
-  background-color: rgba(0,0,0,0.5);
 }
 
 .center{
@@ -43,7 +42,7 @@
 }
 
 .aboutDiv{
-  background: #1C1E22;
+  background: white
 
 }
 .header{
@@ -74,6 +73,20 @@ button{
   flex-wrap: wrap;
   padding-bottom: 4em;
 
+}
+
+.container.aboutDiv {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    font-family: Roboto-thin;
+    font-size: 16pt;
+    line-height: 170%;
+}
+
+.rounded_image{
+
+  border-radius: 50%;
+  max-height: 300px;
 }
 
 span.text-content {
@@ -115,17 +128,44 @@ div.imageBox:hover span.text-content {
 }
 img.imgProject{
   opacity: 1;
+  width: 250px;
+  height: 250px;
+  color: black;
+  border-style: solid;
+      border-color: grey;
+      border-width: 1px;
+
+    }
+
+.container.projectDisplay {
+    background-color: white;
 }
 
 div.imageBox:hover img.imgProject {
   opacity: 0;
 }
 
+img.img-responsive.imgProject {
+    border-radius: 50%;
+}
+span.text-primary {
+    color: black;
+}
+
+h1.header {
+    padding-top: 150px;
+    padding-bottom: 75px;
+}
+
+h1.landing-title {
+    color: whitesmoke;
+}
+
 /*timeline shit*/
 
 
 html, body {
-    background-color: #222C32;
+    background-color: white;
     height: 100%;
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
@@ -133,6 +173,9 @@ html, body {
 
 .cd-container {
   width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   max-width: 1080px;
   margin: 0 auto;
   background: #2B343A;
@@ -144,6 +187,12 @@ html, body {
   display: table;
   clear: both;
 }
+.container.aboutDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 /* --------------------------------
 
@@ -162,7 +211,7 @@ Main components
   content: '';
   position: absolute;
   top: 0;
-  left: 25px;
+  left: 50vw;
   height: 100%;
   width: 4px;
   background: #7E57C2;
@@ -171,6 +220,8 @@ Main components
   #cd-timeline {
     margin-top: 3em;
     margin-bottom: 3em;
+    left: 50vw;
+
   }
   #cd-timeline::before {
     left: 50%;

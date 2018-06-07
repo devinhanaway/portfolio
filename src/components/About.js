@@ -10,8 +10,8 @@ export default class About extends Component{
         <div className="container ">
           <h1 className="header">About Me</h1>
         </div>
-        <div className="container center">
-            <img className="img-responsive" src={"./home_profile_pic_circle.png"} alt="Hello"/>
+        <div className="container center rounded_image">
+            <img className="img-responsive rounded_image" src={"./devin_picture.jpg"} alt="Hello"/>
         </div>
         <div className="container aboutDiv">
           <h1 className="col-md-12">My Values</h1>

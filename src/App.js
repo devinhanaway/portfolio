@@ -30,12 +30,13 @@ class App extends Component {
           </div>
         </div>
         <Landing />
-        <About />
-        <Timeline />
+
+      {/* <Timeline /> */}
         <Projects />
+          <About />
       <div className="nav-bar"></div>
         <div class="navbar-header">
-          <span>Devin Hanaway   | All License Reserved</span>
+          <span>Devin Hanaway   | Built In React JS</span>
         <span></span>
         </div>
       </div>
