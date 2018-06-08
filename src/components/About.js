@@ -39,7 +39,7 @@ export default class About extends Component{
 
     <ul className="text-primary">I met my first co-founder and a great friend to this day, Jack Paley, during this time. We were excited and passionate about connecting the various entrepreneurial resources across UNC and ultimately across the region. We started Carolina Think as an in-person connector for the entrepreneurial resources at UNC and Across the Triangle. Carolina Think is still around today and partners with RTP startups to provide internships to Carolina Students. This was apart of a larger vision, which became my first venture  Inverge.
 
-    While my entrepreneurial journey began far before Inverge,this was the first technology company, or product, I attepted to build and the first startup failure. The journey of navigating the technical, emotional,  politcal, and social aspects of building, and launching inverge was foundational to my entire education at UNC along with my own growth and development.I still keep the landing page of our latest version hosted, cause the values of what it stood for is something I deeply believe in. Our goal was to create a platform for communities, organizations, and individuals to find and share entrepreneur resources. This mission is something that continues to play a large narative in my current ventures and overall purspose. 
+    While my entrepreneurial journey began far before Inverge,this was the first technology company, or product, I attepted to build and the first startup failure. The journey of navigating the technical, emotional,  politcal, and social aspects of building, and launching inverge was foundational to my entire education at UNC along with my own growth and development.I still keep the landing page of our latest version hosted, cause the values of what it stood for is something I deeply believe in. Our goal was to create a platform for communities, organizations, and individuals to find and share entrepreneur resources. This mission is something that continues to play a large narative in my current ventures and overall purspose.
 
 </ul>
 
@@ -50,9 +50,7 @@ export default class About extends Component{
 
       The following July, I found myself submitting my last assignment for college, a paper for my online history of jazz class, from the barracks of an overnight train through Croatia. I had to take 9 hours over the summer to get the 50 hours but figured out a way to finish these hours while traveling through Europe for 4 months.
 
-      I returned in the Fall and used the next year to develop upon my foundational understanding of building technology products.
-
-      After returning to the states in the Fall of 2016, applied to and got accepted to the Galvanize Full Stack Web Development Immersive in Denver, Colorado. I moved out to Denver, in December, and on Feb, 14th, I started the 6 month journey to learning the more technical aspects of launching
+      I returned in the Fall and used the next year to develop upon my foundational understanding of building technology products.I did 3 months of personal learning and then in January I drove out to Denver, and moved in with my cousin, his wife, and Rossi. I got a job doing part time consulting for a small venture fund, and on Feb, 14th, 2017 I started the 6 month journey at Galvanize, learning how to be a full stack engineer.
 
     </ul>
         </div>
